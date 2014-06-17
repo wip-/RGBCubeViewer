@@ -291,6 +291,8 @@ public:
         CBChangeOnResize cbChangesOnResize;
         cbChangesOnResize.mProjection = XMMatrixTranspose( m_Projection );
         pDeviceContext->UpdateSubresource( m_pCBChangeOnResize, 0, NULL, &cbChangesOnResize, 0, 0 );
+
+        return hr;
     }
 
 
